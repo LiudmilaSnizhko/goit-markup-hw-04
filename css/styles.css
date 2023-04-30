@@ -412,8 +412,6 @@ ul {
   gap: 24px;
 }
 
-.social-item {
-}
 .social-link {
   display: flex;
   justify-content: center;
@@ -422,12 +420,11 @@ ul {
   height: 40px;
   background-color: var(--color-portfolio);
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.social-link:hover {
-  background-color: var(--background-icons-social);
-}
-.social-link:focus {
+.social-link.link:hover,
+.social-link.link:focus {
   background-color: var(--background-icons-social);
 }
 
@@ -447,13 +444,11 @@ ul {
 
 .customers-title {
   margin-bottom: 72px;
-  font-weight: 700;
   font-size: 36px;
   text-align: center;
-  line-height: 1.11;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--secondary-txt-color);
+  line-height: 1.11;
 }
 .customers-list {
   display: flex;
@@ -463,12 +458,11 @@ ul {
 }
 .customers-item {
   display: flex;
-  margin-bottom: 120px;
   align-items: center;
   justify-content: center;
   gap: 24px;
-  width: 168px;
-  height: 88px;
+  /* width: 168px;
+  height: 88px; */
   border: 1px solid var(--customers-color);
   border-radius: 4px;
 }
@@ -477,7 +471,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 88px;
+  padding: 16px 32px;
   border-radius: 4px;
   color: var(--customers-color);
   border: 1px solid var(--customers-color);
@@ -544,7 +538,6 @@ ul {
 .footer-social-text {
   display: inline-block;
   margin-bottom: 16px;
-  max-width: 96px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -575,11 +568,6 @@ ul {
   | Portfolio style
   |============================
 */
-.body {
-  background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-}
 
 /**
   |============================
