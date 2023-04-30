@@ -424,7 +424,9 @@ ul {
   border-radius: 50%;
 }
 
-.social-link:hover,
+.social-link:hover {
+  background-color: var(--background-icons-social);
+}
 .social-link:focus {
   background-color: var(--background-icons-social);
 }
@@ -448,8 +450,8 @@ ul {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  letter-spacing: 0.02em;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-txt-color);
 }
@@ -482,6 +484,7 @@ ul {
 }
 .customers-link:hover,
 .customers-link:focus {
+  color: var(--background-icons-social);
   border-color: var(--background-icons-social);
 }
 
